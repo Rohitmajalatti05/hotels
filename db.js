@@ -4,7 +4,7 @@ require('dotenv').config(); //Importing env file
 
 //define the mongodb connection URL
 
-// const mongoURL = 'mongodb://localhost:27017/hotels' This is local database mongoDB
+// const mongoURL = 'mongodb://localhost:27017/hotels' // This is local database mongoDB
 const mongoURL = process.env.MONGODB_URL //This is MongoDb Atlas Server link getting from the env file
 
 //set up the mongodb connection

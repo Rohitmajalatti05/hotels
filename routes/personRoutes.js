@@ -21,7 +21,7 @@ router.post('/', async (req,res) => {
         res.status(200).json(response);
 
     }
-    catch(errr){
+    catch(err){
         console.log(err);
         res.status(500).json({error:'Internal Server Error'});
 
@@ -93,8 +93,8 @@ router.delete('/:id', async (req,res) => {
         console.log('Data Deleted Successfully');
         res.json({message:'Data Deleted Successfully'});
     }
-    catch(err){
-        console.log(err);
+    catch(error){
+        console.log(error);
         res.status(500).json({error:'Internal Server Error'});
     }
 });
